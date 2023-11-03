@@ -7,8 +7,6 @@ use App\Attribute\Exception\EmarsysAttributeException;
 use App\Dto\ContactDto;
 use App\Service\CrmMappingService;
 use PHPUnit\Framework\TestCase;
-use Snowcap\Emarsys\Client;
-use Snowcap\Emarsys\CurlClient;
 
 /**
  * @covers
