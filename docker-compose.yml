@@ -1,13 +1,9 @@
-version: '3.6'
+version: '3.8'
 services:
   php:
-    container_name: php_article
-    image: alaugks/apache-php:8.2.12-dev-v3-xdebug
+    container_name: attribute_article
+    image: alaugks/apache-php:8.2.12-v1.0-xdebug
     volumes:
       - ./app:/var/www/html
-    ports:
-      - 8080:80
     environment:
-      - APPLICATION_ENV=docker
-      - PHP_IDE_CONFIG=serverName=php8.local
-      - XDEBUG_CONFIG=idekey=xdebug_test
+      - XDEBUG_CONFIG=idekey=attribute_article
